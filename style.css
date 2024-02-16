@@ -1,0 +1,87 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'monospace', sans-serif;
+  background-image: url('https://i.postimg.cc/gcLwC1ZQ/pxfuel-1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
+  height: 100vh;
+  margin: 0; /* Remove default margin */
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  max-width: 90%;
+  overflow: hidden;
+}
+/* Styling for the first column */
+#lyrics1 {
+  font-family: 'monospace';
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(33.33% - 20px); /* Adjusted to fit three columns with margin */
+  max-height: 65vh; /* Limiting maximum height */
+  overflow-y: auto; /* Adding scrollbars */
+  background-color: rgba(15, 15, 15, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  margin: 0 10px; /* Added margin for spacing */
+  color: rgb(255, 255, 255);
+}
+
+/* Styling for the second column */
+#lyrics2 {
+  font-family: 'monospace';
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(33.33% - 20px); /* Adjusted to fit three columns with margin */
+  max-height: 45vh; /* Limiting maximum height */
+  overflow-y: auto; /* Adding scrollbars */
+  background-color: rgba(15, 15, 15, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  margin: 0 10px; /* Added margin for spacing */
+  color: rgb(255, 255, 255);
+}
+
+/* Styling for the third column */
+#lyrics3 {
+  font-family: 'monospace';
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(33.33% - 20px); /* Adjusted to fit three columns with margin */
+  max-height: 45vh; /* Limiting maximum height */
+  overflow-y: auto; /* Adding scrollbars */
+  background-color: rgba(15, 15, 15, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  margin: 0 10px; /* Added margin for spacing */
+  color: rgb(255, 255, 255);
+}
+
+
+/* Media Query for Responsive Layout */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* Stack columns on smaller screens */
+    align-items: center;
+  }
+
+  .lyrics-container {
+    width: 90%; /* Adjusted width for single column layout */
+    margin: 10px 0; /* Adjusted margin for spacing */
+  }
+}
